@@ -1,0 +1,22 @@
+name = "yargiconfig"
+main = "src/index.js"
+compatibility_date = "2026-11-11"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*", "/media/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "yargiconfig"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "yargiconfig-media"
+
+[vars]
+ACCESS_TEAM_DOMAIN = "YOURTEAM.cloudflareaccess.com"
+ACCESS_AUD = "REPLACE_WITH_ACCESS_APPLICATION_AUD"
+ADMIN_EMAILS = "admin@example.com"

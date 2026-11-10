@@ -1,0 +1,8 @@
+{
+  "name": "yargiconfig-cloudflare",
+  "private": true,
+  "type": "module",
+  "scripts": { "deploy": "wrangler deploy", "dev": "wrangler dev", "db:init": "wrangler d1 execute yargiconfig --remote --file=./schema.sql" },
+  "dependencies": { "jose": "^5.9.6" },
+  "devDependencies": { "wrangler": "^4.45.0" }
+}
