@@ -9,14 +9,15 @@ run_worker_first = ["/api/*", "/media/*"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "yargiconfig"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_name = "yargiconfig-db"
+database_id = "42816f44-2362-49b9-b59a-4bc2930905c7"
 
 [[r2_buckets]]
 binding = "MEDIA"
-bucket_name = "yargiconfig-media"
+bucket_name = "yargiconfig-assets"
 
 [vars]
-ACCESS_TEAM_DOMAIN = "YOURTEAM.cloudflareaccess.com"
-ACCESS_AUD = "REPLACE_WITH_ACCESS_APPLICATION_AUD"
-ADMIN_EMAILS = "admin@example.com"
+ACCESS_TEAM_DOMAIN = "misty-rice-6b8d.cloudflareaccess.com"
+ACCESS_AUD = "TEMPORARY_AUD"
+ADMIN_EMAILS = "BURAYA_KENDI_CLOUDFLARE_EMAILIN"
+
