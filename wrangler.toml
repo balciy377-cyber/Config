@@ -19,5 +19,5 @@ bucket_name = "yargiconfig-assets"
 [vars]
 ACCESS_TEAM_DOMAIN = "misty-rice-6b8d.cloudflareaccess.com"
 ACCESS_AUD = "TEMPORARY_AUD"
-ADMIN_EMAILS = "BURAYA_KENDI_CLOUDFLARE_EMAILIN"
+ADMIN_EMAILS = "balciy388@gmail.com"
 
