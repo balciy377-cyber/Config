@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <meta name="description" content="YargıConfig — PUBG Mobile ve mobil oyun içerikleri, config tanıtımları ve topluluk duyuruları.">
+  <title>YargıConfig — Gaming Config Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="YargıConfig ana sayfa"><span class="brand-mark">Y</span><span>YARGI<span class="red">CONFIG</span></span></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Ana Sayfa</a><a href="#catalog">Config'ler</a><a href="#categories">Kategoriler</a><a href="#announcements">Duyurular</a><a href="#about">Hakkımızda</a>
+    </nav>
+    <div class="top-actions"><button class="icon-btn" id="focusSearch" aria-label="Ara">⌕</button><a class="btn btn-red btn-small" href="https://t.me/ioscedrixddconfig" target="_blank" rel="noopener">➤ Telegram</a></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YARGI CONFIG <span class="muted">— OFFICIAL COMMUNITY</span></div>
+        <h1>PUBG MOBILE<br>CONFIG &amp; MOD <em>ARŞİVİ</em></h1>
+        <p>Güncel içerikleri keşfet, detaylarını incele ve ilgili paylaşıma Telegram üzerinden ulaş.</p>
+        <div class="hero-actions"><a class="btn btn-red" href="#catalog">İçerikleri keşfet <span>→</span></a><a class="btn btn-outline" href="https://t.me/ioscedrixddchat" target="_blank" rel="noopener">♟ Topluluğa katıl</a></div>
+      </div>
+      <div class="hero-art" aria-label="Kırmızı ve siyah oyun temalı görsel alanı"><div class="hero-orbit"></div><div class="hero-symbol">Y</div><div class="hero-caption">PLAY SMART. STAY UPDATED.</div></div>
+      <div class="stats">
+        <div><b>TELEGRAM</b><span>Resmî topluluk</span></div><div><b>CONFIG</b><span>İçerik arşivi</span></div><div><b>TELEGRAM</b><span>Paylaşımların merkezi</span></div><div><b>GÜNCEL</b><span>Duyurular ve sürümler</span></div>
+      </div>
+      
+    </section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="section-heading"><div><div class="eyebrow">CONTENT LIBRARY</div><h2>Öne çıkan içerikler</h2></div><span class="muted" id="resultCount"></span></div>
+      <div class="toolbar" id="categories">
+        <div class="chips" id="chips">
+          <button class="chip selected" data-category="Tümü">Tümü</button><button class="chip" data-category="PUBG Mobile">PUBG Mobile</button><button class="chip" data-category="Android">Android</button><button class="chip" data-category="iOS">iOS</button><button class="chip" data-category="PAK">PAK</button><button class="chip" data-category="Duyuru">Duyurular</button>
+        </div>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="İçerik ara..." autocomplete="off"></label>
+      </div>
+      <div class="content-layout">
+        <div class="cards" id="cards" aria-live="polite"></div><p id="apiStatus" class="api-status" role="status"></p>
+        <aside class="detail-panel" id="detailPanel">
+          <div class="detail-empty"><span class="detail-icon">↗</span><h3>Bir içerik seç</h3><p>Detayları ve Telegram bağlantısını burada görüntüleyebilirsin.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="announcement" id="announcements"><div class="announce-icon">!</div><div><div class="eyebrow">COMMUNITY UPDATES</div><h2>Duyuruları kaçırma.</h2><p>Yeni içerikler ve güncellemeler için resmi Telegram kanalını takip et.</p></div><a class="btn btn-red" href="https://t.me/ioscedrixddconfig" target="_blank" rel="noopener">Telegram kanalına git →</a></section>
+    <section class="about" id="about"><div><div class="eyebrow">ABOUT YARGI</div><h2>İçeriklerin merkezi.<br><span class="red">Topluluğun adresi.</span></h2></div><p>YargıConfig, oyun içeriklerini kategoriler halinde keşfetmeni sağlayan bir tanıtım ve arşiv platformudur. Bu sitede dosya barındırılmaz veya indirme yapılmaz; içeriklerin asıl paylaşımına Telegram üzerinden ulaşırsın.</p></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">Y</span><span>YARGI<span class="red">CONFIG</span></span></a><span>© <span id="year"></span> YargıConfig. Tüm hakları saklıdır.</span><span class="footer-links"><a href="https://t.me/ioscedrixddconfig" target="_blank" rel="noopener">Telegram ↗</a><a href="/admin">Yönetim</a></span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
